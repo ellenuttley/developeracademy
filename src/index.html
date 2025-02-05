@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<link
+			rel="icon"
+			href="assets/Leaf.png" />
+		<meta
+			name="viewport"
+			content="width=device-width, initial-scale=1.0" />
+		<title>Ellen.</title>
+		<link
+			href="./output.css"
+			rel="stylesheet" />
+	</head>
+	<link
+		rel="stylesheet"
+		href="https://cdn.jsdelivr.net/npm/tw-elements/css/tw-elements.min.css" />
+	<link
+		rel="preconnect"
+		href="https://fonts.googleapis.com" />
+	<link
+		rel="preconnect"
+		href="https://fonts.gstatic.com"
+		crossorigin />
+	<link
+		href="https://fonts.googleapis.com/css2?family=Calistoga&family=Manrope:wght@200..800&display=swap"
+		rel="stylesheet" />
+
+	<script src="https://cdn.tailwindcss.com/3.3.0"></script>
+	<script>
+		tailwind.config = {
+			darkMode: "class",
+			theme: {
+				fontFamily: {
+					calistoga: ["Calistoga", "serif"],
+					manrope: ["Manrope", "serif"],
+				},
+			},
+			corePlugins: {
+				preflight: false,
+			},
+		}
+	</script>
+	<body class="bg-[#A47991] h-screen font-manrope">
+		<!-- Navigation -->
+		<nav class="bg-[#EFE7EB] shadow shadow-[#100007] p-4 rounded-md">
+			<div class="container mx-auto">
+				<div class="flex flex-col md:flex-row justify-between items-center">
+					<div class="flex items-center">
+						<img
+							src="assets/Leaf.png"
+							alt="logo image of a leaf"
+							class="h-full w-6 mr-2" />
+						<a
+							href="index.html"
+							class="text-3xl font-calistoga text-[#100007] hover:text-[#865B72] hover:scale-105"
+							>Ellen.</a
+						>
+					</div>
+
+					<div class="*:p-2 *:rounded-lg font-manrope font-semibold">
+						<a
+							href="about.html"
+							class="hover:text-[#795367] hover:shadow-sm hover:shadow-[#100007]/50 active:shadow-[#100007] active:shadow-inner"
+							>About</a
+						>
+						<a
+							href="services.html"
+							class="hover:text-[#795367] hover:shadow-sm hover:shadow-[#100007]/50 active:shadow-[#100007] active:shadow-inner"
+							>Services</a
+						>
+						<a
+							href="contact.html"
+							class="hover:text-[#795367] hover:shadow-sm hover:shadow-[#100007]/50 active:shadow-[#100007] active:shadow-inner"
+							>Contact</a
+						>
+					</div>
+				</div>
+			</div>
+		</nav>
+
+		<!-- Main Content -->
+		<main class="container mx-auto p-4">
+			<div class="grid grid-cols-1 md:grid-cols-3 gap-4">
+				<!-- Grid items -->
+				<div class="bg-white p-4 rounded shadow-inner shadow-[#100007]">
+                    <img
+                    src="assets/ellen.png"
+                    alt="image of ellen"
+                    class="max-h-80" />
+
+				</div>
+				<div class="bg-white p-4 rounded shadow">
+					<h2 class="text-xl mb-2">Section 2</h2>
+					<p>Content goes here</p>
+				</div>
+				<div class="bg-white p-4 rounded shadow">
+					<h2 class="text-xl mb-2">Section 3</h2>
+					<p>Content goes here</p>
+				</div>
+			</div>
+		</main>
+	</body>
+</html>
